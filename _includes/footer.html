@@ -1,0 +1,33 @@
+<footer class="site-footer" style="background-color: var(--color-dark); padding: 60px 0 20px 0; border-top: 4px solid var(--color-slate);">
+    <div class="container">
+        <div class="footer-widgets" style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 40px; gap: 30px;">
+            <div class="footer-widget" style="color: var(--color-white); width: 100%; max-width: 300px;">
+                <h4 style="color: var(--color-yellow); margin-bottom: 15px;">A Better Hauling Co.</h4>
+                <p style="color: var(--color-white);">Delivering heavy-duty roll-off dumpsters for residential and commercial cleanups.</p>
+            </div>
+            <div class="footer-widget" style="color: var(--color-white); width: 100%; max-width: 300px;">
+                <h4 style="color: var(--color-yellow); margin-bottom: 15px;">Contact Us</h4>
+                <p style="color: var(--color-white);">
+                    Phone: (555) 123-4567<br>
+                    Email: dispatch@abetterhauling.com<br>
+                    Hours: Mon-Fri 7AM - 5PM
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid var(--color-white); padding-top: 20px;">
+            <p style="color: var(--color-white); margin: 0; font-size: 0.9rem;">&copy; 2026 A Better Hauling Co. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNav = document.querySelector('.main-navigation');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('is-open');
+            });
+        }
+    });
+</script>
