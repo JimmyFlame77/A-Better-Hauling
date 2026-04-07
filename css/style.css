@@ -248,7 +248,7 @@ a:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: rgba(24, 51, 49, 0.94);
+        background-color: rgba(24, 51, 49, 0.88);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         border-bottom: 4px solid var(--color-yellow);
