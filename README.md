@@ -210,7 +210,7 @@ When migrating to a custom domain:
 - [x] ~~Verify blog post meta descriptions under 160 chars~~ — Done
 
 ### Future
-- [ ] Service area location pages
+- [x] ~~Service area location pages~~ — Done (7 cities with localized content)
 - [x] ~~Blog system~~ — Done (`_posts/`, `_layouts/post.html`, `blog.html`, 3 articles)
 - [ ] Connect contact form to backend (Formspree or custom)
 - [ ] Google Search Console + analytics
