@@ -1153,6 +1153,18 @@ a:hover {
     background: var(--color-dark);
     overflow: hidden;
 }
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+.page-hero > *:not(.page-hero-bg) {
+    position: relative;
+    z-index: 1;
+}
 
 .page-hero::after {
     content: '';
@@ -1240,7 +1252,7 @@ a:hover {
 .site-footer {
     background-color: var(--color-dark);
     padding: 60px 0 20px 0;
-    border-top: 4px solid var(--color-slate);
+    border-top: none;
 }
 
 .footer-widgets {
