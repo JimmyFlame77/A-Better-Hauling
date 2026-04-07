@@ -221,7 +221,6 @@ a:hover {
 }
 
 /* Mobile-only items hidden on desktop */
-.mobile-only-phone,
 .mobile-only-book {
     display: none;
 }
@@ -249,7 +248,9 @@ a:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--color-dark);
+        background-color: rgba(24, 51, 49, 0.94);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border-bottom: 4px solid var(--color-yellow);
         box-shadow: 0 10px 20px rgba(0,0,0,0.5);
         max-height: 0;
@@ -302,17 +303,19 @@ a:hover {
         color: var(--color-yellow);
     }
 
-    .mobile-only-phone,
     .mobile-only-book {
         display: list-item;
+        text-align: center;
+        padding: 8px 24px 16px;
     }
 
     .btn-flyout {
         display: inline-block;
-        margin: 10px 24px;
-        font-size: 1.2rem;
-        padding: 10px 24px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        padding: 12px 28px;
         text-align: center;
+        width: auto;
     }
 }
 

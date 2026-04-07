@@ -10,11 +10,10 @@
                 {% for link in site.data.navigation %}
                 <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
                 {% endfor %}
-                <li class="mobile-only-phone"><a href="{{ site.data.site.phone_link }}">📞 {{ site.data.site.phone_formatted }}</a></li>
-                <li class="mobile-only-book"><a href="{{ '/#contact' | relative_url }}" class="btn-metal btn-flyout">Book Now</a></li>
+                <li class="mobile-only-book"><a href="{{ site.data.site.phone_link }}" class="btn-metal btn-flyout">Call Now: {{ site.data.site.phone_formatted }}</a></li>
             </ul>
         </nav>
-        <a href="{{ '/#contact' | relative_url }}" class="btn-metal btn-header btn-header-desktop">Book Now</a>
+        <a href="{{ site.data.site.phone_link }}" class="btn-metal btn-header btn-header-desktop">Call Now</a>
         <button class="mobile-menu-toggle" aria-label="Open Menu" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
