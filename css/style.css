@@ -22,9 +22,14 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
+    overflow-x: hidden;
     background-color: var(--color-dark);
     color: var(--color-white);
     font-family: var(--font-body);
@@ -35,7 +40,10 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+}
+
+section {
+    overflow-x: hidden;
 }
 
 .container {
@@ -848,6 +856,9 @@ a:hover {
 .about-image img {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* ==========================================================================
@@ -1317,8 +1328,18 @@ a:hover {
     }
 
     .about-image img {
-        max-width: 500px;
+        max-width: 100%;
         margin: 0 auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-text p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .contact-grid {
