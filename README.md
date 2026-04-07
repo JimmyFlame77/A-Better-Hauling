@@ -205,7 +205,9 @@ When migrating to a custom domain:
 - [ ] Rebuild services page with detailed service descriptions
 - [ ] Add contact form (section or standalone page)
 - [ ] Add hero image / site photos
-- [ ] Add OG share image (1200x630)
+- [x] ~~Add OG share image~~ — Done (1200x630 WebP, 52KB, from hero-bg)
+- [x] ~~Add canonical URLs to all pages~~ — Done
+- [x] ~~Verify blog post meta descriptions under 160 chars~~ — Done
 
 ### Future
 - [ ] Service area location pages
