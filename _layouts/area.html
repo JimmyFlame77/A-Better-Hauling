@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<!-- Hero with faint bg image -->
+<section class="area-hero">
+  <div class="page-hero-bg" style="background-image: url('{{ '/images/hero-bg.webp' | relative_url }}');"></div>
+  <div class="container">
+    <p class="section-label">Service Area</p>
+    <h1 class="section-heading">Dumpster Rental in <span class="highlight">{{ page.city }}, {{ page.state }}</span></h1>
+    <div class="hazard-bar"></div>
+    <p class="area-hero-sub">{{ page.hero_description }}</p>
+  </div>
+</section>
+
+<!-- Intro/about the area -->
+<section class="area-intro">
+  <div class="container area-intro-inner">
+    <div class="area-intro-text">
+      <h2>{{ page.intro_heading }}</h2>
+      <p>{{ page.intro_text }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- What We Offer -->
+<section class="area-services">
+  <div class="container">
+    <h2 class="section-heading">What We Offer in {{ page.city }}</h2>
+    <div class="hazard-bar"></div>
+    <ul class="area-offer-list">
+      <li>🚛 Roll-off dumpster rentals — 10 to 40-yard sizes</li>
+      <li>🦾 Grapple truck service for heavy debris and demolition</li>
+      <li>🏠 Residential cleanouts and renovation debris</li>
+      <li>🏗️ Commercial and construction site hauling</li>
+      <li>📦 Full-service junk removal — we do the loading</li>
+      <li>⏰ Same-day delivery available</li>
+    </ul>
+    <div class="area-cta-wrap">
+      <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Get a Free Quote</a>
+      <a href="{{ site.data.site.phone_link }}" class="btn-outline">Call Now: {{ site.data.site.phone_formatted }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Service area tags -->
+<section class="area-tags-section">
+  <div class="container">
+    <h2 class="section-heading">All Service Areas</h2>
+    <div class="area-tags">
+      {% for area in site.data.service_areas %}
+      {% if area.url %}
+        <a href="{{ area.url | relative_url }}" class="area-tag{% if area.name == page.city %} active{% endif %}{% if area.is_hq %} hq{% endif %}">{{ area.name }}{% if area.is_hq %} (HQ){% endif %}</a>
+      {% else %}
+        <span class="area-tag">{{ area.name }}</span>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Book Your Dumpster?</h2>
+    <p>Same-day delivery available in {{ page.city }} and surrounding areas. No hidden fees.</p>
+    <div class="hero-ctas">
+      <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Get a Free Quote</a>
+      <a href="{{ site.data.site.phone_link }}" class="btn-outline">Call Now: {{ site.data.site.phone_formatted }}</a>
+    </div>
+  </div>
+</section>

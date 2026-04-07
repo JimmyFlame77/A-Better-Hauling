@@ -916,12 +916,35 @@ a:hover {
     border-radius: 30px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+a.area-tag:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-yellow);
+    background: #1e3f3b;
+    color: var(--color-yellow);
+}
+
+.area-tag.active {
+    background: var(--color-yellow);
+    color: var(--color-dark);
+    border-color: var(--color-yellow);
+    font-weight: 700;
 }
 
 .area-tag.hq {
     background: var(--color-white);
     color: var(--color-dark);
     font-weight: 700;
+}
+
+a.area-tag.hq:hover {
+    background: var(--color-yellow);
+    color: var(--color-dark);
+    border-color: var(--color-yellow);
 }
 
 .area-note {
@@ -1825,5 +1848,169 @@ a:hover {
         white-space: normal;
         overflow: visible;
         text-overflow: unset;
+    }
+}
+
+/* ==========================================================================
+   AREA PAGES
+   ========================================================================== */
+
+/* Highlight span (yellow text) */
+.highlight {
+    color: var(--color-yellow);
+}
+
+/* Area Hero */
+.area-hero {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    background: var(--color-dark);
+    overflow: hidden;
+}
+
+.area-hero .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.area-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.area-hero .section-label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+}
+
+.area-hero .section-heading {
+    color: var(--color-white);
+    font-size: 3.4rem;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.area-hero-sub {
+    max-width: 620px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Area Intro */
+.area-intro {
+    padding: 60px 20px;
+    background: var(--color-slate);
+}
+
+.area-intro-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.area-intro-text h2 {
+    font-family: var(--font-header);
+    color: var(--color-yellow);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.area-intro-text p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Area Services / What We Offer */
+.area-services {
+    padding: 60px 20px;
+    background: var(--color-dark);
+    text-align: center;
+}
+
+.area-services .section-heading {
+    color: var(--color-yellow);
+}
+
+.area-offer-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.area-offer-list li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.area-offer-list li:last-child {
+    border-bottom: none;
+}
+
+.area-cta-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Area Tags Section (on area pages) */
+.area-tags-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--color-yellow);
+}
+
+.area-tags-section .section-heading {
+    color: var(--color-dark);
+}
+
+.area-tags-section .area-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Area Page Responsive */
+@media (max-width: 660px) {
+    .area-hero .section-heading {
+        font-size: 2.4rem;
+    }
+
+    .area-hero-sub {
+        font-size: 1rem;
+    }
+
+    .area-intro-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .area-offer-list li {
+        font-size: 1rem;
+    }
+
+    .area-cta-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area-cta-wrap .btn-metal,
+    .area-cta-wrap .btn-outline {
+        width: 100%;
+        text-align: center;
     }
 }

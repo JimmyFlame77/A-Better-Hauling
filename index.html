@@ -173,7 +173,11 @@ og_description: "Roll-off dumpster rentals and hauling services in Elizabeth, CO
         <h2 class="section-heading">Proudly Serving Elbert County &amp; Beyond</h2>
         <div class="area-tags">
             {% for area in site.data.service_areas %}
-            <span class="area-tag{% if area.is_hq %} hq{% endif %}">{% if area.is_hq %}📍 {% endif %}{{ area.name }}</span>
+            {% if area.url %}
+            <a href="{{ area.url | relative_url }}" class="area-tag{% if area.is_hq %} hq{% endif %}">{% if area.is_hq %}📍 {% endif %}{{ area.name }}</a>
+            {% else %}
+            <span class="area-tag">{{ area.name }}</span>
+            {% endif %}
             {% endfor %}
         </div>
         <p class="area-note">Outside our standard area? We can accommodate — additional fees may apply.</p>
