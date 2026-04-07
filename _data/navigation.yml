@@ -10,3 +10,6 @@
 - label: "Contact"
   url: "/#contact"
   index_url: "#contact"
+- label: "Blog"
+  url: "/blog.html"
+  index_url: "/blog.html"
