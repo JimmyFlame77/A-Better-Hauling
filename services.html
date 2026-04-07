@@ -1,37 +1,81 @@
 ---
 layout: default
-title: Services | A Better Hauling Co.
+title: Our Services | A Better Hauling Co.
 ---
 
-<section class="page-hero" style="background-color: var(--color-dark); padding: 60px 20px; text-align: center; border-bottom: 4px solid var(--color-yellow);">
+<!-- ==================== PAGE HERO ==================== -->
+<section class="page-hero">
     <div class="container">
-        <h1 style="color: var(--color-yellow); font-size: 4rem; margin-bottom: 10px; text-transform: uppercase;">Our Services</h1>
-        <p style="color: var(--color-white); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
-            Heavy-duty solutions for projects of any size. If you can fill it, we can haul it.
-        </p>
+        <h1>Our Services</h1>
+        <p>Comprehensive hauling solutions for every project. From driveway dumpsters to full-service debris removal — if you can fill it, we can haul it.</p>
     </div>
 </section>
 
-<section class="container" style="padding: 80px 20px;">
-    <div class="services-grid">
+<!-- ==================== SERVICE ROWS ==================== -->
+<div class="service-rows">
 
-        <div class="service-card">
-            <h3>Residential Dumpsters</h3>
-            <p>Perfect for home renovations, garage cleanouts, and major landscaping projects. Drop it in your driveway, fill it at your own pace, and we'll haul it away. Available in 10, 15, and 20-yard sizes.</p>
-            <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Book Now</a>
+    <!-- Row 1: Residential Dumpsters -->
+    <div class="service-row container">
+        <div class="service-row-image">
+            <img src="{{ '/images/dumpster-rolloff.webp' | relative_url }}" alt="Residential roll-off dumpster">
         </div>
-
-        <div class="service-card">
-            <h3>Commercial Roll-Offs</h3>
-            <p>Heavy-duty containers built for construction sites, roofing tear-offs, and major demolitions. Reliable swap-outs to keep your job site moving. 30 and 40-yard options available.</p>
-            <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Book Now</a>
+        <div class="service-row-text">
+            <h2>Residential Dumpsters</h2>
+            <p>Perfect for home renovations, garage cleanouts, and major landscaping projects. Drop it in your driveway, fill it at your own pace, and we'll haul it away when you're done.</p>
+            <p>Available in 10, 15, 18, 20, 25, 30, and 40-yard sizes with a 14-day rental included. Whether it's a bathroom remodel or a full property cleanout, we've got the right size for the job.</p>
+            <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Book a Dumpster</a>
         </div>
+    </div>
 
-        <div class="service-card">
-            <h3>Full-Service Junk Removal</h3>
-            <p>Don't want to load it yourself? Point at what needs to go, and our crew will handle the heavy lifting. Same-day loading and hauling for property cleanouts and eviction clear-outs.</p>
+    <!-- Row 2: Commercial Roll-Offs (reversed) -->
+    <div class="service-row reversed container">
+        <div class="service-row-image">
+            <img src="{{ '/images/dumpster-standard.webp' | relative_url }}" alt="Commercial roll-off dumpster">
+        </div>
+        <div class="service-row-text">
+            <h2>Commercial Roll-Offs</h2>
+            <p>Heavy-duty containers built for construction sites, roofing tear-offs, and major demolitions. We keep your job site moving with reliable delivery, swap-outs, and pickups on your schedule.</p>
+            <p>Our 30 and 40-yard containers handle the biggest loads. Need a swap? Call us and we'll have a fresh one dropped before the crew breaks for lunch.</p>
             <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Get a Quote</a>
         </div>
+    </div>
 
+    <!-- Row 3: Grapple Truck Service -->
+    <div class="service-row container">
+        <div class="service-row-image">
+            <img src="{{ '/images/grapple-truck.webp' | relative_url }}" alt="Grapple truck loading debris">
+        </div>
+        <div class="service-row-text">
+            <h2>Grapple Truck Service</h2>
+            <p>Our grapple truck eliminates the labor involved with property cleanups, debris removal, and demolition projects. We grab it, load it, and haul it — no lifting required on your end.</p>
+            <p>Perfect for large brush piles, demolition debris, old sheds, decks, and anything too heavy or awkward to throw in a dumpster by hand.</p>
+            <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Row 4: Full-Service Junk Removal (reversed) -->
+    <div class="service-row reversed container">
+        <div class="service-row-image">
+            <img src="{{ '/images/hero-truck.webp' | relative_url }}" alt="Full-service junk removal truck">
+        </div>
+        <div class="service-row-text">
+            <h2>Full-Service Junk Removal</h2>
+            <p>Don't want to load it yourself? Just point at what needs to go. Our crew handles the heavy lifting — same-day loading and hauling for everything from single items to full property clearouts.</p>
+            <p>Ideal for eviction clear-outs, estate cleanouts, garage overhauls, and commercial property turnovers. We do the work so you don't have to.</p>
+            <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Get a Quote</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- ==================== CTA BAND ==================== -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Ready to Book Your Dumpster?</h2>
+        <p>Same-day delivery available. No hidden fees. No hassle.</p>
+        <div class="hero-ctas">
+            <a href="{{ '/#contact' | relative_url }}" class="btn-metal">Get a Free Quote</a>
+            <a href="{{ site.data.site.phone_link }}" class="btn-outline">Call: {{ site.data.site.phone_formatted }}</a>
+        </div>
     </div>
 </section>
