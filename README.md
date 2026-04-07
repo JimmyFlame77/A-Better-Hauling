@@ -214,5 +214,9 @@ When migrating to a custom domain:
 - [x] ~~Blog system~~ — Done (`_posts/`, `_layouts/post.html`, `blog.html`, 3 articles)
 - [ ] Connect contact form to backend (Formspree or custom)
 - [ ] Google Search Console + analytics
-- [ ] Custom domain migration
+- [ ] Custom domain migration:
+  1. Set custom domain in repo Settings → Pages
+  2. Change `url` in `_config.yml` from `"https://jimmyflame77.github.io"` to `"https://yourdomain.com"`
+  3. Change `baseurl` in `_config.yml` from `"/A-Better-Hauling"` to `""`
+  4. Push changes — OG images, canonicals, sitemap, and all links auto-update
 - [x] ~~Image optimization~~ — Done. All images WebP, logo.png → logo.webp, max compression (569KB total)
