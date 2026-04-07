@@ -1,0 +1,23 @@
+- title: "Residential Dumpsters"
+  icon: "🏠"
+  description: "Perfect for home renovations, garage cleanouts, and major landscaping projects. Drop it in your driveway, fill it at your own pace, and we'll haul it away."
+  cta: "Book Now"
+  link: "/#contact"
+
+- title: "Commercial Roll-Offs"
+  icon: "🏗️"
+  description: "Heavy-duty containers built for construction sites, roofing tear-offs, and major demolitions. Reliable swap-outs to keep your job site moving."
+  cta: "Book Now"
+  link: "/#contact"
+
+- title: "Grapple Truck Service"
+  icon: "🦾"
+  description: "Our grapple truck eliminates labor involved with property cleanups, debris removal, and demolition projects. We grab it, load it, and haul it — no lifting required."
+  cta: "Learn More"
+  link: "/#contact"
+
+- title: "Full-Service Junk Removal"
+  icon: "🚛"
+  description: "Don't want to load it yourself? Point at what needs to go, and our crew will handle the heavy lifting. Same-day loading and hauling."
+  cta: "Get a Quote"
+  link: "/#contact"

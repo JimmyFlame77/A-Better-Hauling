@@ -1,20 +1,22 @@
 <header class="site-header">
     <div class="container header-inner">
         <div class="site-branding">
-            <a href="index.html">
-                <img src="images/logo.png" alt="A Better Hauling Co." class="custom-logo">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/images/logo.png' | relative_url }}" alt="{{ site.data.site.company_name }}" class="custom-logo">
             </a>
         </div>
-        <button class="mobile-menu-toggle" aria-label="Open Menu">
+        <a href="{{ site.data.site.phone_link }}" class="header-phone header-phone-desktop">{{ site.data.site.phone }}</a>
+        <button class="mobile-menu-toggle" aria-label="Open Menu" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
         <nav class="main-navigation">
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                {% for link in site.data.navigation %}
+                <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+                {% endfor %}
+                <li class="mobile-only-phone"><a href="{{ site.data.site.phone_link }}">{{ site.data.site.phone_formatted }}</a></li>
             </ul>
         </nav>
     </div>

@@ -1,0 +1,110 @@
+- size: "10"
+  title: "10 Yard Bin"
+  price: "360"
+  dimensions: "8'L × 8'W × 4'H"
+  rental_days: "Varies"
+  tonnage: "1 ton"
+  featured: false
+  badge: "Call to Order"
+  note: "Long-term construction, custom builds, extended job sites"
+  features:
+    - "Interior renovations (kitchen/bath)"
+    - "Demolition debris (wood, drywall, fixtures)"
+    - "Landscaping cleanup"
+    - "Long-term construction projects"
+
+- size: "15"
+  title: "15 Yard Dumpster"
+  price: "400"
+  dimensions: "15'L × 8'W × 4'H"
+  rental_days: "14"
+  tonnage: "1.5 tons"
+  featured: false
+  badge: null
+  note: null
+  features:
+    - "1.5 tons included"
+    - "14-day rental period"
+    - "Home cleanouts & renovations"
+    - "Small demolition projects"
+    - "$15/day additional, $80/ton overage"
+
+- size: "18"
+  title: "18 Yard Dumpster"
+  price: "430"
+  dimensions: "16'L × 8'W × 4'H"
+  rental_days: "14"
+  tonnage: "1.8 tons"
+  featured: true
+  badge: "Most Popular"
+  note: null
+  features:
+    - "1.8 tons included"
+    - "14-day rental period"
+    - "Mid-size renovations"
+    - "Roofing & siding projects"
+    - "$15/day additional, $80/ton overage"
+
+- size: "20"
+  title: "20 Yard Dumpster"
+  price: "460"
+  dimensions: "16'L × 8'W × 5'H"
+  rental_days: "14"
+  tonnage: "2 tons"
+  featured: false
+  badge: null
+  note: null
+  features:
+    - "2 tons included"
+    - "14-day rental period"
+    - "Large home renovations"
+    - "Construction debris"
+    - "$15/day additional, $80/ton overage"
+
+- size: "25"
+  title: "25 Yard Dumpster"
+  price: "495"
+  dimensions: "22'L × 8'W × 5'H"
+  rental_days: "14"
+  tonnage: "2.5 tons"
+  featured: false
+  badge: null
+  note: null
+  features:
+    - "2.5 tons included"
+    - "14-day rental period"
+    - "Major renovations & cleanouts"
+    - "Commercial projects"
+    - "$15/day additional, $80/ton overage"
+
+- size: "30"
+  title: "30 Yard Dumpster"
+  price: "525"
+  dimensions: "22'L × 8'W × 6'H"
+  rental_days: "14"
+  tonnage: "3 tons"
+  featured: false
+  badge: null
+  note: null
+  features:
+    - "3 tons included"
+    - "14-day rental period"
+    - "Large-scale cleanouts"
+    - "Commercial & industrial"
+    - "$15/day additional, $80/ton overage"
+
+- size: "40"
+  title: "40 Yard Dumpster"
+  price: "650"
+  dimensions: "22'L × 8'W × 8'H"
+  rental_days: "14"
+  tonnage: "4 tons"
+  featured: false
+  badge: "Largest"
+  note: null
+  features:
+    - "4 tons included"
+    - "14-day rental period"
+    - "Major construction sites"
+    - "Whole-property cleanouts"
+    - "$15/day additional, $80/ton overage"
