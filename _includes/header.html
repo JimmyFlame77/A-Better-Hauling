@@ -10,7 +10,7 @@
                 {% for link in site.data.navigation %}
                 <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
                 {% endfor %}
-                <li class="mobile-only-book"><a href="{{ site.data.site.phone_link }}" class="btn-metal btn-flyout">Call Now: {{ site.data.site.phone_formatted }}</a></li>
+                <li class="mobile-only-book"><a href="{{ site.data.site.phone_link }}" class="btn-metal btn-flyout">Call Now</a></li>
             </ul>
         </nav>
         <a href="{{ site.data.site.phone_link }}" class="btn-metal btn-header btn-header-desktop">Call Now</a>
