@@ -636,9 +636,14 @@ a:hover {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+}
+.pricing-row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.pricing-row-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .price-card {
@@ -649,6 +654,11 @@ a:hover {
     border: 2px solid transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.price-card .btn-metal {
+    margin-top: auto;
 }
 
 .price-card:hover {
@@ -767,10 +777,15 @@ a:hover {
 
 .accepted-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 900px;
-    margin: 0 auto 30px;
+    max-width: 960px;
+    margin: 0 auto 20px;
+}
+.accepted-row-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.accepted-row-5 {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .accepted-item {
@@ -1386,8 +1401,10 @@ a.area-tag.hq:hover {
         max-width: 500px;
     }
 
-    .pricing-grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    .pricing-grid,
+    .pricing-row-3,
+    .pricing-row-4 {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-grid {
@@ -1471,7 +1488,9 @@ a.area-tag.hq:hover {
         font-size: 2.2rem;
     }
 
-    .pricing-grid {
+    .pricing-grid,
+    .pricing-row-3,
+    .pricing-row-4 {
         grid-template-columns: 1fr;
         max-width: 360px;
         margin-left: auto;
@@ -1486,8 +1505,10 @@ a.area-tag.hq:hover {
         transform: translateY(-4px);
     }
 
-    .accepted-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    .accepted-grid,
+    .accepted-row-4,
+    .accepted-row-5 {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .form-row {

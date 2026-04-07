@@ -89,8 +89,28 @@ og_description: "Roll-off dumpster rentals and hauling services in Elizabeth, CO
         <p class="section-label">Transparent Pricing</p>
         <h2 class="section-heading">Dumpster Rental Sizes &amp; Pricing</h2>
         <p class="section-subtitle">All rentals include delivery, pickup, and disposal. No hidden fees.</p>
-        <div class="pricing-grid">
-            {% for item in site.data.pricing %}
+        <div class="pricing-grid pricing-row-3">
+            {% for item in site.data.pricing limit:3 %}
+            <div class="price-card{% if item.featured %} featured{% endif %}">
+                {% if item.badge %}
+                <span class="price-badge">{{ item.badge }}</span>
+                {% endif %}
+                <div class="size-number">{{ item.size }}</div>
+                <div class="size-label">Yard {{ item.title | split: ' ' | last }}</div>
+                <div class="price">${{ item.price }}</div>
+                <div class="price-note">{{ item.tonnage }} included &bull; {{ item.rental_days }}-day rental</div>
+                <div class="dimensions">{{ item.dimensions }}</div>
+                <ul class="features-list">
+                    {% for feature in item.features %}
+                    <li>{{ feature }}</li>
+                    {% endfor %}
+                </ul>
+                <a href="#contact" class="btn-metal">Book This Size</a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="pricing-grid pricing-row-4">
+            {% for item in site.data.pricing offset:3 %}
             <div class="price-card{% if item.featured %} featured{% endif %}">
                 {% if item.badge %}
                 <span class="price-badge">{{ item.badge }}</span>
@@ -120,11 +140,13 @@ og_description: "Roll-off dumpster rentals and hauling services in Elizabeth, CO
     <div class="container">
         <p class="section-label">What Goes In</p>
         <h2 class="section-heading">We Take Just About Everything</h2>
-        <div class="accepted-grid">
+        <div class="accepted-grid accepted-row-4">
             <div class="accepted-item"><span class="item-icon">🏗️</span>Construction &amp; Demolition Debris</div>
             <div class="accepted-item"><span class="item-icon">🔩</span>Metal (Recycling)</div>
             <div class="accepted-item"><span class="item-icon">🧊</span>Appliances</div>
             <div class="accepted-item"><span class="item-icon">🌿</span>Yard Waste</div>
+        </div>
+        <div class="accepted-grid accepted-row-5">
             <div class="accepted-item"><span class="item-icon">🛋️</span>Furniture</div>
             <div class="accepted-item"><span class="item-icon">🗑️</span>General Trash &amp; Debris</div>
             <div class="accepted-item"><span class="item-icon">🛁</span>Hot Tubs</div>
