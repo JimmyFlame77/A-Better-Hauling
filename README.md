@@ -201,10 +201,10 @@ When migrating to a custom domain:
 ## To Do
 
 ### Phase 2 — Page Builds
-- [ ] Rebuild homepage with full content sections (hero, services, pricing, about, service area, contact, CTA)
-- [ ] Rebuild services page with detailed service descriptions
-- [ ] Add contact form (section or standalone page)
-- [ ] Add hero image / site photos
+- [x] ~~Rebuild homepage with full content sections~~ — Done (hero, services, pricing, about, service area, contact, CTA)
+- [x] ~~Rebuild services page~~ — Done (4 alternating service rows with images)
+- [x] ~~Add contact form~~ — Done (section on homepage, visual only — backend TBD)
+- [x] ~~Add hero images / site photos~~ — Done (all from current site, converted to WebP)
 - [x] ~~Add OG share image~~ — Done (1200x630 WebP, 52KB, from hero-bg)
 - [x] ~~Add canonical URLs to all pages~~ — Done
 - [x] ~~Verify blog post meta descriptions under 160 chars~~ — Done
