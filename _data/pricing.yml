@@ -2,10 +2,10 @@
   title: "10 Yard Bin"
   price: "360"
   dimensions: "8'L × 8'W × 4'H"
-  rental_days: "Varies"
+  rental_days: "14"
   tonnage: "1 ton"
   featured: false
-  badge: "Call to Order"
+  badge: null
   note: "Long-term construction, custom builds, extended job sites"
   features:
     - "Interior renovations (kitchen/bath)"
