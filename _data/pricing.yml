@@ -23,11 +23,13 @@
   badge: null
   note: null
   features:
-    - "1.5 tons included"
-    - "14-day rental period"
-    - "Home cleanouts & renovations"
+    - "Home clean outs & renovations"
     - "Small demolition projects"
-    - "$15/day additional, $80/ton overage"
+    - "Garage clean outs"
+    - "Garage clean outs"
+    - "Small demolition projects"
+    - "$15/day after rental period"
+    - "$80/ton over included weight"
 
 - size: "18"
   title: "18 Yard Dumpster"
@@ -35,15 +37,15 @@
   dimensions: "16'L × 8'W × 4'H"
   rental_days: "14"
   tonnage: "1.8 tons"
-  featured: true
-  badge: "Most Popular"
+  featured: false
+  badge: "Call to Order"
   note: null
   features:
-    - "1.8 tons included"
-    - "14-day rental period"
-    - "Mid-size renovations"
-    - "Roofing & siding projects"
-    - "$15/day additional, $80/ton overage"
+    - "Smaller debris removal projects"
+    - "Small home renovations"
+    - "Garage or basement clean outs"
+    - "$15/day after rental period"
+    - "$80/ton over included weight"
 
 - size: "20"
   title: "20 Yard Dumpster"
@@ -52,14 +54,14 @@
   rental_days: "14"
   tonnage: "2 tons"
   featured: false
-  badge: null
+  badge: "Best for Mid-Size Projects"
   note: null
   features:
-    - "2 tons included"
-    - "14-day rental period"
-    - "Large home renovations"
-    - "Construction debris"
-    - "$15/day additional, $80/ton overage"
+    - "Mid-size home renovations"
+    - "Flooring/Carpet removal"
+    - "Construction & yard debris"
+    - "$15/day after rental period"
+    - "$80/ton over included weight"
 
 - size: "25"
   title: "25 Yard Dumpster"
@@ -71,11 +73,11 @@
   badge: null
   note: null
   features:
-    - "2.5 tons included"
-    - "14-day rental period"
-    - "Major renovations & cleanouts"
-    - "Commercial projects"
-    - "$15/day additional, $80/ton overage"
+    - "Estate clean outs"
+    - "Deck removal"
+    - "General household & yard debris"
+    - "$15/day after rental period"
+    - "$80/ton over included weight"
 
 - size: "30"
   title: "30 Yard Dumpster"
@@ -83,15 +85,16 @@
   dimensions: "22'L × 8'W × 6'H"
   rental_days: "14"
   tonnage: "3 tons"
-  featured: false
-  badge: null
+  featured: true
+  badge: "Most Popular"
   note: null
   features:
-    - "3 tons included"
-    - "14-day rental period"
-    - "Large-scale cleanouts"
-    - "Commercial & industrial"
-    - "$15/day additional, $80/ton overage"
+    - "Large-scale clean outs"
+    - "Residential & commercial"
+    - "Major home renovations"
+    - "Whole-home or property clean ups"
+    - "$15/day after rental period"
+    - "$80/ton over included weight"
 
 - size: "40"
   title: "40 Yard Dumpster"
@@ -103,8 +106,9 @@
   badge: "Largest"
   note: null
   features:
-    - "4 tons included"
-    - "14-day rental period"
-    - "Major construction sites"
+    - "Major renovations & clean outs"
+    - "Whole home, garage or estate clean outs"
+    - "Commercial construction debris"
     - "Whole-property cleanouts"
-    - "$15/day additional, $80/ton overage"
+    - "$15/day after rental period"
+    - "$80/ton over included weight"
