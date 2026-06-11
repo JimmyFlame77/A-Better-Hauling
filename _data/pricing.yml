@@ -38,7 +38,7 @@
   rental_days: "14"
   tonnage: "1.8 tons"
   featured: false
-  badge: "Call to Order"
+  badge: null
   note: null
   features:
     - "Smaller debris removal projects"
