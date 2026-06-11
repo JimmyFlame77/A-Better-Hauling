@@ -5,7 +5,7 @@
   rental_days: "14"
   tonnage: "1 ton"
   featured: false
-  badge: null
+  badge: "Not Available"
   note: "Long-term construction, custom builds, extended job sites"
   features:
     - "Interior renovations (kitchen/bath)"
