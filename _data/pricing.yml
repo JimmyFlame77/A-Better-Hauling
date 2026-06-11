@@ -103,7 +103,7 @@
   rental_days: "14"
   tonnage: "4 tons"
   featured: false
-  badge: "Largest"
+  badge: null
   note: null
   features:
     - "Major renovations & clean outs"
