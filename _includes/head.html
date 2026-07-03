@@ -3,20 +3,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="canonical" href="{{ page.url | relative_url }}">
+
+  {% assign canonical_url = page.canonical | default: page.url | absolute_url %}
+  <link rel="canonical" href="{{ canonical_url }}">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/og-image.jpg">
-  <meta property="og:url" content="{{ page.url | relative_url }}">
+  <meta property="og:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
+  <meta property="og:url" content="{{ canonical_url }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/og-image.jpg">
+  <meta name="twitter:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/webp" href="{{ '/images/logo.webp' | relative_url }}">
@@ -44,8 +46,8 @@
       "addressRegion": "{{ site.data.site.state }}",
       "addressCountry": "US"
     },
-    "url": "{{ site.url }}{{ site.baseurl }}/",
-    "image": "{{ '/images/logo.webp' | relative_url }}",
+    "url": "{{ '/' | absolute_url }}",
+    "image": "{{ '/images/logo.webp' | absolute_url }}",
     "openingHours": "Mo-Fr 07:00-17:00",
     "sameAs": [
       "{{ site.data.site.facebook }}"
