@@ -2,7 +2,7 @@
 
 Marketing site for **A Better Hauling Co.**, a dumpster rental and hauling services company serving Elizabeth, CO and the surrounding Elbert County area. Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
-**Live site:** [https://jimmyflame77.github.io/A-Better-Hauling/](https://jimmyflame77.github.io/A-Better-Hauling/)
+**Live site:** [https://abetterhauling.com](https://abetterhauling.com)
 **Phone:** (303) 522-9020
 
 ---
