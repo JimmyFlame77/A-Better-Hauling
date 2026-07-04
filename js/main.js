@@ -62,17 +62,38 @@
       });
       if (valid) {
         var btn = form.querySelector('.btn-submit');
-        btn.textContent = '\u2713 Message Sent!';
-        btn.style.background = '#2a6a2a';
-        btn.style.color = '#fff';
+        btn.textContent = 'Sending\u2026';
         btn.disabled = true;
-        setTimeout(function() {
-          btn.textContent = 'Send Message';
-          btn.style.background = '';
-          btn.style.color = '';
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          if (data.success) {
+            btn.textContent = '\u2713 Message Sent!';
+            btn.style.background = '#2a6a2a';
+            btn.style.color = '#fff';
+            setTimeout(function() {
+              btn.textContent = 'Send Message';
+              btn.style.background = '';
+              btn.style.color = '';
+              btn.disabled = false;
+              form.reset();
+            }, 4000);
+          } else {
+            btn.textContent = 'Something went wrong. Try again.';
+            btn.style.background = '#c0392b';
+            btn.style.color = '#fff';
+            btn.disabled = false;
+          }
+        })
+        .catch(function() {
+          btn.textContent = 'Something went wrong. Try again.';
+          btn.style.background = '#c0392b';
+          btn.style.color = '#fff';
           btn.disabled = false;
-          form.reset();
-        }, 4000);
+        });
       }
     });
   }
