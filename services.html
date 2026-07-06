@@ -29,6 +29,19 @@ og_description: "Dumpster rental and hauling services for residential and commer
             <p>Perfect for home renovations, garage cleanouts, and major landscaping projects. Drop it in your driveway, fill it at your own pace, and we'll haul it away when you're done.</p>
             <p>Available in 15, 18, 20, 25, 30, and 40-yard sizes with a 14-day rental included. Whether it's a bathroom remodel or a full property cleanout, we've got the right size for the job.</p>
             <a href="{{ site.data.site.phone_link }}" class="btn-metal">Book a Dumpster</a>
+            {% if site.data.services[0].faqs %}
+            <div class="faq-list">
+                {% for faq in site.data.services[0].faqs %}
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        {{ faq.question }}
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-body"><p>{{ faq.answer }}</p></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </div>
 
@@ -42,6 +55,19 @@ og_description: "Dumpster rental and hauling services for residential and commer
             <p>Heavy-duty containers built for construction sites, roofing tear-offs, and major demolitions. We keep your job site moving with reliable delivery, swap-outs, and pickups on your schedule.</p>
             <p>Our 30 and 40-yard containers handle the biggest loads. Need a swap? Call us and we'll have a fresh one dropped before the crew breaks for lunch.</p>
             <a href="{{ site.data.site.phone_link }}" class="btn-metal">Get a Quote</a>
+            {% if site.data.services[1].faqs %}
+            <div class="faq-list">
+                {% for faq in site.data.services[1].faqs %}
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        {{ faq.question }}
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-body"><p>{{ faq.answer }}</p></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </div>
 
@@ -55,6 +81,19 @@ og_description: "Dumpster rental and hauling services for residential and commer
             <p>Our grapple truck eliminates the labor involved with property cleanups, debris removal, and demolition projects. We grab it, load it, and haul it — no lifting required on your end.</p>
             <p>Perfect for large brush piles, demolition debris, old sheds, decks, and anything too heavy or awkward to throw in a dumpster by hand.</p>
             <a href="{{ site.data.site.phone_link }}" class="btn-metal">Call to Book</a>
+            {% if site.data.services[2].faqs %}
+            <div class="faq-list">
+                {% for faq in site.data.services[2].faqs %}
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        {{ faq.question }}
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-body"><p>{{ faq.answer }}</p></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </div>
 
@@ -68,6 +107,19 @@ og_description: "Dumpster rental and hauling services for residential and commer
             <p>From estate clean outs to large-scale debris removal, we specialize in residential and commercial property clean ups, heavy debris removal, and full-site property clean outs. Call today for a free quote and site assessment.</p>
             <p>Ideal for commercial and residential clean outs, estate cleanouts, garage overhauls, and commercial property turnovers.</p>
             <a href="{{ site.data.site.phone_link }}" class="btn-metal">Call to Book</a>
+            {% if site.data.services[3].faqs %}
+            <div class="faq-list">
+                {% for faq in site.data.services[3].faqs %}
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        {{ faq.question }}
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-body"><p>{{ faq.answer }}</p></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </div>
 

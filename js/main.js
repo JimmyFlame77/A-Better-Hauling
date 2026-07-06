@@ -97,4 +97,21 @@
       }
     });
   }
+  // FAQ Accordion
+  var faqTriggers = document.querySelectorAll('.faq-trigger');
+  faqTriggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item.is-open').forEach(function(openItem) {
+        openItem.classList.remove('is-open');
+        openItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
 })();

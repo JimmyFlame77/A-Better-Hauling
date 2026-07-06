@@ -1285,6 +1285,72 @@ a.area-tag.hq:hover {
 }
 
 /* ==========================================================================
+   FAQ ACCORDION
+   ========================================================================== */
+.faq-list {
+    margin-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.faq-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 16px 0;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    gap: 16px;
+    transition: color 0.2s ease;
+}
+
+.faq-trigger:hover {
+    color: var(--color-yellow);
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--color-yellow);
+    transition: transform 0.3s ease;
+    font-style: normal;
+}
+
+.faq-item.is-open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.faq-item.is-open .faq-body {
+    max-height: 500px;
+}
+
+.faq-body p {
+    padding-bottom: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 .site-footer {
