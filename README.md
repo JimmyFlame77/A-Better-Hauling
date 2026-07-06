@@ -2,7 +2,7 @@
 
 Marketing site for **A Better Hauling Co.**, a dumpster rental and hauling services company serving Elizabeth, CO and the surrounding Elbert County area. Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
-**Live site:** [https://abetterhauling.com](https://abetterhauling.com)
+**Live site:** [https://jimmyflame77.github.io/A-Better-Hauling/](https://jimmyflame77.github.io/A-Better-Hauling/)
 **Phone:** (303) 522-9020
 
 ---
@@ -155,13 +155,18 @@ bundle exec jekyll serve
 
 ## Deployment
 
-Auto-deploys via **GitHub Pages** on push to `main`.
+Auto-deploys via **GitHub Pages** on push to `main`, using the default project site URL:
 
-When migrating to a custom domain:
-1. Set custom domain in repo Settings → Pages
-2. Change `baseurl` in `_config.yml` from `"/A-Better-Hauling"` to `""`
-3. Update `url` in `_config.yml` to the production domain
-4. Push changes
+- `url: "https://jimmyflame77.github.io"`
+- `baseurl: "/A-Better-Hauling"`
+
+If you migrate to a custom domain later:
+1. Configure the DNS records for the custom domain first
+2. Set the custom domain in repo Settings → Pages
+3. Change `baseurl` in `_config.yml` from `"/A-Better-Hauling"` to `""`
+4. Update `url` in `_config.yml` to the production domain
+5. Add a `CNAME` file containing the custom domain
+6. Push changes after the DNS is live
 
 ---
 

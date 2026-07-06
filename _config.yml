@@ -1,7 +1,7 @@
 title: "A Better Hauling Co."
 description: "Heavy-duty roll-off dumpster rentals and hauling services in Elizabeth, CO and the surrounding Elbert County area. Call 303-522-9020."
-url: "https://abetterhauling.com/"
-baseurl: ""
+url: "https://jimmyflame77.github.io"
+baseurl: "/A-Better-Hauling"
 permalink: pretty
 markdown: kramdown
 plugins:
