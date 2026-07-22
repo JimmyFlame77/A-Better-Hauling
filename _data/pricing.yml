@@ -5,13 +5,14 @@
   rental_days: "14"
   tonnage: "1 ton"
   featured: false
-  badge: "Not Available"
+  badge: "Grapple Truck Bin"
   note: "Long-term construction, custom builds, extended job sites"
   features:
     - "Interior renovations (kitchen/bath)"
     - "Demolition debris (wood, drywall, fixtures)"
     - "Landscaping cleanup"
-    - "Long-term construction projects"
+    - "Long-term construction projects only"
+    - "Two month rental minimum-charged by the month"
 
 - size: "15"
   title: "15 Yard Dumpster"
@@ -25,7 +26,6 @@
   features:
     - "Home clean outs & renovations"
     - "Small demolition projects"
-    - "Garage clean outs"
     - "Garage clean outs"
     - "Small demolition projects"
     - "$15/day after rental period"
