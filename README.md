@@ -1,4 +1,5 @@
 # A Better Hauling Co. — Elizabeth, CO
+## Site Launch - May 16, 2026
 
 Marketing site for **A Better Hauling Co.**, a dumpster rental and hauling services company serving Elizabeth, CO and the surrounding Elbert County area. Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
